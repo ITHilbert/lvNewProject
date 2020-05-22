@@ -11,7 +11,7 @@
     @yield('title_postfix', config('adminlte.title_postfix', ''))</title>
     
     {{-- CSS --}}
-    @yield('adminlte_css_pre')
+    @yield('css_pre')
     <link rel="stylesheet" href="{{ asset('css/app.css') }}"> 
    {{--  <link rel="stylesheet" href="{{ asset('vendor/fontawesome-free/css/all.min.css') }}"> --}}
     {{-- <link rel="stylesheet" href="{{ asset('vendor/overlayScrollbars/css/OverlayScrollbars.min.css') }}">  --}}
@@ -19,7 +19,7 @@
     {{-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic"> --}}
     {{-- @include('adminlte::plugins', ['type' => 'css']) --}}
     {{-- <link rel="stylesheet" href="{{ asset('css/custom.css') }}"> --}}
-    @yield('adminlte_css')
+    @yield('css')
     
 
     {{-- JavaScript --}}
@@ -45,13 +45,11 @@
 
 
     {{-- JavaScript --}}
-    {{-- <script src="{{ asset('vendor/overlayScrollbars/js/jquery.overlayScrollbars.min.js') }}"></script> --}}
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/datatables.min.js') }}"></script>
-    {{-- <script src="{{ asset('vendor/laravelkit/js/laravelkit.js') }}" ></script>
-    <script src="{{ asset('vendor/laravelkit/js/vuecomponents.js') }}"></script>
+    <script src="{{ asset('js/myFunctions.js') }}"></script>
     @include('adminlte::plugins', ['type' => 'js']) --}}
 
-    @yield('adminlte_js')
+    @yield('js')
 </body>
 </html>
